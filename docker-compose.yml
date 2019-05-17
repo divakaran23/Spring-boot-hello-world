@@ -1,0 +1,9 @@
+version: '2'
+services:
+  pihealthchecker:
+    build: .
+    hostname: "localhost"
+    volumes:
+      - ./logs:/usr/src/app/logs
+    ports:
+      - "8080:8080"
